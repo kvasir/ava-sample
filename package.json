@@ -1,0 +1,26 @@
+{
+  "name": "ava-sample",
+  "version": "1.0.0",
+  "description": "Basic sample code using the AVA test runner.",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kvasir/ava-sample.git"
+  },
+  "keywords": [
+    "ava"
+  ],
+  "author": "Kvasir",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kvasir/ava-sample/issues"
+  },
+  "homepage": "https://github.com/kvasir/ava-sample#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.5.0"
+  }
+}
