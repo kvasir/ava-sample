@@ -1,15 +1,27 @@
 import test from 'ava';
 
-test('foo', t => {
-	t.pass();
+// Basic test
+test('basic', t => {
+	t.is('bar', 'bar');
+	t.same(['a', 'b'], ['a', 'b']);
 	t.end();
 });
 
-test('bar', t => {
-	t.plan(2);
+// Names are optional
+test(t => {
+	t.end();
+});
+
+// Use named function as name
+test(function name(t) {
+	t.end();
+});
+
+// Planned assertions
+test('planned assert', t => {
+	t.plan(1);
 
 	setTimeout(() => {
-		t.is('bar', 'bar');
-		t.same(['a', 'b'], ['a', 'b']);
+		t.pass();
 	}, 100);
 });
